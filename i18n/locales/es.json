@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy John",
+    "role": "Desarrollador de Software",
+    "contact": "Contáctame",
+    "downloadCV": "Descargar CV"
+  }
+}
