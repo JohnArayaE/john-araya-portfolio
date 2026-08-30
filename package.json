@@ -10,11 +10,16 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/icon": "^2.5.1",
     "@nuxt/ui": "^4.10.0",
     "@nuxtjs/color-mode": "^4.0.1",
     "@nuxtjs/i18n": "^10.6.0",
     "nuxt": "^4.5.2",
     "vue": "^3.5.41",
     "vue-router": "^5.2.0"
+  },
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.127",
+    "@iconify-json/simple-icons": "^1.2.94"
   }
 }
