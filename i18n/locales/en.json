@@ -1,14 +1,40 @@
 {
-  "nav": {
-    "home": "Home",
+  "navbar": {
     "about": "About me",
+    "skills": "Skills",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "downloadCv": "Download CV"
   },
   "hero": {
-    "greeting": "Hi, I'm John",
-    "role": "Software Developer",
-    "contact": "Contact me",
-    "downloadCV": "Download CV"
+  "eyebrow": "Hi, I'm",
+  "role": "Software Developer",
+  "description": "I develop web applications and backend solutions focused on functionality, performance, and clear digital experiences.",
+  "viewProjects": "View projects",
+  "contactMe": "Contact me",
+
+  "focus": {
+    "title": "Areas of Focus",
+
+    "web": {
+      "title": "Web Development",
+      "description": "Modern, responsive interfaces focused on a clear and intuitive user experience."
+    },
+
+    "backend": {
+      "title": "Backend",
+      "description": "Robust APIs, organized architecture, and scalable solutions focused on performance."
+    },
+
+    "database": {
+      "title": "Databases",
+      "description": "Data modeling, querying, and storage for modern and reliable applications."
+    },
+
+    "cloud": {
+      "title": "Cloud",
+      "description": "Deployment, cloud services, and tools for building and maintaining modern applications."
+    }
   }
+}
 }

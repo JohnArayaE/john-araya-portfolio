@@ -1,3 +1,13 @@
+<script setup lang="ts">
+const { t, locale } = useI18n()
+
+const cvPath = computed(() => {
+  return locale.value === 'es'
+    ? '/cv/John-Araya-CV-ES.pdf'
+    : '/cv/John-Araya-CV-EN.pdf'
+})
+</script>
+
 <template>
   <header class="navbar">
     <div class="navbar__container">
@@ -6,16 +16,32 @@
       </a>
 
       <nav class="navbar__menu">
-        <a href="#inicio" class="navbar__link">Inicio</a>
-        <a href="#sobre-mi" class="navbar__link">Sobre mí</a>
-        <a href="#habilidades" class="navbar__link">Habilidades</a>
-        <a href="#proyectos" class="navbar__link">Proyectos</a>
-        <a href="#contacto" class="navbar__link">Contacto</a>
+        <a href="#sobre-mi" class="navbar__link">
+          {{ t('navbar.about') }}
+        </a>
+
+        <a href="#habilidades" class="navbar__link">
+          {{ t('navbar.skills') }}
+        </a>
+
+        <a href="#proyectos" class="navbar__link">
+          {{ t('navbar.projects') }}
+        </a>
+
+        <a href="#contacto" class="navbar__link">
+          {{ t('navbar.contact') }}
+        </a>
       </nav>
 
       <div class="navbar__actions">
-        <a href="/cv/John-Araya-CV-ES.pdf" class="navbar__cv" download>
-          Descargar CV
+        <UiLanguageSwitcher />
+
+        <a
+          :href="cvPath"
+          class="navbar__cv"
+          download
+        >
+          {{ t('navbar.downloadCv') }}
         </a>
       </div>
     </div>

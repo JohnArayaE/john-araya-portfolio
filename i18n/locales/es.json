@@ -1,14 +1,40 @@
 {
-  "nav": {
-    "home": "Inicio",
+  "navbar": {
     "about": "Sobre mí",
+    "skills": "Habilidades",
     "projects": "Proyectos",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "downloadCv": "Descargar CV"
   },
   "hero": {
-    "greeting": "Hola, soy John",
-    "role": "Desarrollador de Software",
-    "contact": "Contáctame",
-    "downloadCV": "Descargar CV"
+  "eyebrow": "Hola, soy",
+  "role": "Desarrollador de Software",
+  "description": "Desarrollo aplicaciones web y soluciones backend enfocadas en funcionalidad, rendimiento y experiencias digitales claras.",
+  "viewProjects": "Ver proyectos",
+  "contactMe": "Contáctame",
+
+  "focus": {
+    "title": "Áreas de enfoque",
+
+    "web": {
+      "title": "Desarrollo Web",
+      "description": "Interfaces modernas, responsivas y centradas en una experiencia de usuario clara e intuitiva."
+    },
+
+    "backend": {
+      "title": "Backend",
+      "description": "APIs robustas, arquitectura organizada y soluciones escalables orientadas al rendimiento."
+    },
+
+    "database": {
+      "title": "Bases de Datos",
+      "description": "Modelado, consultas y almacenamiento de datos para aplicaciones modernas y confiables."
+    },
+
+    "cloud": {
+      "title": "Cloud",
+      "description": "Despliegue, servicios en la nube y herramientas para construir y mantener aplicaciones modernas."
+    }
   }
+}
 }

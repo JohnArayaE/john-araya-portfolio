@@ -1,30 +1,42 @@
+<script setup lang="ts">
+const { t } = useI18n()
+</script>
+
 <template>
   <section id="inicio" class="hero">
     <div class="hero__container">
+
       <!-- LADO IZQUIERDO -->
       <div class="hero__content">
-        <p class="hero__eyebrow">Hola, soy</p>
+        <p class="hero__eyebrow">
+          {{ t('hero.eyebrow') }}
+        </p>
 
         <h1 class="hero__title">
           John Araya
         </h1>
 
         <h2 class="hero__role">
-          Desarrollador de Software
+          {{ t('hero.role') }}
         </h2>
 
         <p class="hero__description">
-          Desarrollo aplicaciones web y soluciones backend enfocadas en
-          funcionalidad, rendimiento y experiencias digitales claras.
+          {{ t('hero.description') }}
         </p>
 
         <div class="hero__actions">
-          <a href="#proyectos" class="hero__button hero__button--primary">
-            Ver proyectos
+          <a
+            href="#proyectos"
+            class="hero__button hero__button--primary"
+          >
+            {{ t('hero.viewProjects') }}
           </a>
 
-          <a href="#contacto" class="hero__button hero__button--secondary">
-            Contáctame
+          <a
+            href="#contacto"
+            class="hero__button hero__button--secondary"
+          >
+            {{ t('hero.contactMe') }}
           </a>
         </div>
 
@@ -54,11 +66,12 @@
         <div class="focus-card__header">
           <div class="focus-card__title">
             <UIcon name="i-lucide-sparkles" />
-            <span>Áreas de enfoque</span>
+            <span>{{ t('hero.focus.title') }}</span>
           </div>
         </div>
 
         <div class="focus-card__list">
+
           <!-- DESARROLLO WEB -->
           <article class="focus-item">
             <div class="focus-item__icon">
@@ -66,11 +79,10 @@
             </div>
 
             <div class="focus-item__content">
-              <h3>Desarrollo Web</h3>
+              <h3>{{ t('hero.focus.web.title') }}</h3>
 
               <p>
-                Interfaces modernas, responsivas y centradas en una experiencia
-                de usuario clara e intuitiva.
+                {{ t('hero.focus.web.description') }}
               </p>
 
               <div class="focus-item__badges">
@@ -148,11 +160,10 @@
             </div>
 
             <div class="focus-item__content">
-              <h3>Backend</h3>
+              <h3>{{ t('hero.focus.backend.title') }}</h3>
 
               <p>
-                APIs robustas, arquitectura organizada y soluciones escalables
-                orientadas al rendimiento.
+                {{ t('hero.focus.backend.description') }}
               </p>
 
               <div class="focus-item__badges">
@@ -222,11 +233,10 @@
             </div>
 
             <div class="focus-item__content">
-              <h3>Bases de Datos</h3>
+              <h3>{{ t('hero.focus.database.title') }}</h3>
 
               <p>
-                Modelado, consultas y almacenamiento de datos para aplicaciones
-                modernas y confiables.
+                {{ t('hero.focus.database.description') }}
               </p>
 
               <div class="focus-item__badges">
@@ -280,11 +290,10 @@
             </div>
 
             <div class="focus-item__content">
-              <h3>Cloud</h3>
+              <h3>{{ t('hero.focus.cloud.title') }}</h3>
 
               <p>
-                Despliegue, servicios en la nube y herramientas para construir
-                y mantener aplicaciones modernas.
+                {{ t('hero.focus.cloud.description') }}
               </p>
 
               <div class="focus-item__badges">
@@ -330,8 +339,10 @@
               </div>
             </div>
           </article>
+
         </div>
       </aside>
+
     </div>
   </section>
 </template>
