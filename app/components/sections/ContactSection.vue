@@ -1,10 +1,14 @@
+<script setup lang="ts">
+const { t } = useI18n()
+</script>
+
 <template>
   <section id="contacto" class="contact">
     <div class="contact__container">
 
       <div class="contact__heading">
         <h2 class="contact__title">
-          CONTAC<span>TO</span>
+          {{ t('contact.title') }}<span>{{ t('contact.titleHighlight') }}</span>
         </h2>
 
         <div class="contact__line"></div>
@@ -14,17 +18,15 @@
 
         <div class="contact__main">
           <span class="contact__eyebrow">
-            Disponible para conectar
+            {{ t('contact.eyebrow') }}
           </span>
 
           <h3>
-            ¿Hablamos?
+            {{ t('contact.heading') }}
           </h3>
 
           <p>
-            Si tienes una oportunidad, proyecto o simplemente quieres
-            conversar sobre desarrollo de software, puedes contactarme
-            directamente por cualquiera de estos medios.
+            {{ t('contact.description') }}
           </p>
 
           <a
@@ -33,7 +35,7 @@
           >
             <UIcon name="i-lucide-mail" />
 
-            <span>Enviarme un correo</span>
+            <span>{{ t('contact.sendEmail') }}</span>
 
             <UIcon name="i-lucide-arrow-up-right" />
           </a>

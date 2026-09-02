@@ -1,22 +1,27 @@
+<script setup lang="ts">
+const { t } = useI18n()
+</script>
+
 <template>
   <section id="habilidades" class="skills">
     <div class="skills__container">
+
       <!-- ENCABEZADO -->
       <div class="skills__heading">
         <h2 class="skills__title">
-          HABILIDADES
+          {{ t('skills.title') }}
         </h2>
 
         <div class="skills__line"></div>
 
         <p class="skills__intro">
-          Capacidades profesionales y técnicas que aplico durante el desarrollo
-          de proyectos y el trabajo en equipo.
+          {{ t('skills.intro') }}
         </p>
       </div>
 
       <!-- CONTENIDO -->
       <div class="skills__grid">
+
         <!-- HABILIDADES BLANDAS -->
         <article class="skills-card">
           <div class="skills-card__header">
@@ -25,21 +30,22 @@
             </div>
 
             <div>
-
               <h3>
-                Habilidades blandas
+                {{ t('skills.soft.title') }}
               </h3>
             </div>
           </div>
 
           <div class="skills-card__content skills-card__content--soft">
+
             <div class="skill-item">
               <UIcon name="i-lucide-users-round" />
 
               <div>
-                <h4>Trabajo en equipo</h4>
+                <h4>{{ t('skills.soft.teamwork.title') }}</h4>
+
                 <p>
-                  Colaboración efectiva para alcanzar objetivos comunes.
+                  {{ t('skills.soft.teamwork.description') }}
                 </p>
               </div>
             </div>
@@ -48,9 +54,10 @@
               <UIcon name="i-lucide-crown" />
 
               <div>
-                <h4>Liderazgo</h4>
+                <h4>{{ t('skills.soft.leadership.title') }}</h4>
+
                 <p>
-                  Capacidad para coordinar, orientar y apoyar al equipo.
+                  {{ t('skills.soft.leadership.description') }}
                 </p>
               </div>
             </div>
@@ -59,9 +66,10 @@
               <UIcon name="i-lucide-refresh-cw" />
 
               <div>
-                <h4>Adaptabilidad</h4>
+                <h4>{{ t('skills.soft.adaptability.title') }}</h4>
+
                 <p>
-                  Facilidad para afrontar nuevos retos y formas de trabajo.
+                  {{ t('skills.soft.adaptability.description') }}
                 </p>
               </div>
             </div>
@@ -70,9 +78,10 @@
               <UIcon name="i-lucide-target" />
 
               <div>
-                <h4>Disciplina</h4>
+                <h4>{{ t('skills.soft.discipline.title') }}</h4>
+
                 <p>
-                  Constancia, organización y compromiso con los objetivos.
+                  {{ t('skills.soft.discipline.description') }}
                 </p>
               </div>
             </div>
@@ -81,13 +90,14 @@
               <UIcon name="i-lucide-handshake" />
 
               <div>
-                <h4>Excelentes relaciones interpersonales</h4>
+                <h4>{{ t('skills.soft.interpersonal.title') }}</h4>
+
                 <p>
-                  Comunicación y colaboración efectiva dentro de diferentes
-                  equipos de trabajo.
+                  {{ t('skills.soft.interpersonal.description') }}
                 </p>
               </div>
             </div>
+
           </div>
         </article>
 
@@ -100,56 +110,58 @@
 
             <div>
               <h3>
-                Habilidades técnicas
+                {{ t('skills.technical.title') }}
               </h3>
             </div>
           </div>
 
           <div class="technical-list">
+
             <div class="technical-item">
               <UIcon name="i-lucide-layers-3" />
-              <span>Desarrollo Full Stack</span>
+              <span>{{ t('skills.technical.fullStack') }}</span>
             </div>
 
             <div class="technical-item">
               <UIcon name="i-lucide-braces" />
-              <span>Desarrollo de APIs REST</span>
+              <span>{{ t('skills.technical.restApis') }}</span>
             </div>
 
             <div class="technical-item">
               <UIcon name="i-lucide-database" />
-              <span>Diseño y gestión de bases de datos</span>
+              <span>{{ t('skills.technical.databaseDesign') }}</span>
             </div>
 
             <div class="technical-item">
               <UIcon name="i-lucide-terminal-square" />
-              <span>SQL y consultas de datos</span>
+              <span>{{ t('skills.technical.sql') }}</span>
             </div>
 
             <div class="technical-item">
               <UIcon name="i-lucide-unplug" />
-              <span>Integración de servicios</span>
+              <span>{{ t('skills.technical.integration') }}</span>
             </div>
 
             <div class="technical-item">
               <UIcon name="i-lucide-git-branch" />
-              <span>Control de versiones</span>
+              <span>{{ t('skills.technical.versionControl') }}</span>
             </div>
 
             <div class="technical-item">
               <UIcon name="i-lucide-box" />
-              <span>Containerización</span>
+              <span>{{ t('skills.technical.containerization') }}</span>
             </div>
 
             <div class="technical-item">
               <UIcon name="i-lucide-cloud" />
-              <span>Cloud Computing</span>
+              <span>{{ t('skills.technical.cloud') }}</span>
             </div>
 
             <div class="technical-item">
               <UIcon name="i-lucide-monitor-smartphone" />
-              <span>Diseño responsivo</span>
+              <span>{{ t('skills.technical.responsive') }}</span>
             </div>
+
           </div>
         </article>
 
@@ -162,68 +174,78 @@
 
             <div>
               <h3>
-                Idiomas
+                {{ t('skills.languages.title') }}
               </h3>
             </div>
           </div>
 
           <div class="languages">
+
             <!-- ESPAÑOL -->
             <div class="language">
               <div class="language__top">
+
                 <div>
                   <span class="language__label">
-                    Idioma
+                    {{ t('skills.languages.label') }}
                   </span>
 
                   <h4>
-                    Español
+                    {{ t('skills.languages.spanish.name') }}
                   </h4>
                 </div>
 
                 <span class="language__level">
-                  Nativo
+                  {{ t('skills.languages.spanish.level') }}
                 </span>
+
               </div>
 
               <div class="language__bar">
-                <span class="language__progress language__progress--native"></span>
+                <span
+                  class="language__progress language__progress--native"
+                ></span>
               </div>
 
               <p>
-                Dominio nativo para comunicación profesional y cotidiana.
+                {{ t('skills.languages.spanish.description') }}
               </p>
             </div>
 
             <!-- INGLÉS -->
             <div class="language">
               <div class="language__top">
+
                 <div>
                   <span class="language__label">
-                    Idioma
+                    {{ t('skills.languages.label') }}
                   </span>
 
                   <h4>
-                    Inglés
+                    {{ t('skills.languages.english.name') }}
                   </h4>
                 </div>
 
                 <span class="language__level">
-                  B1 · Intermedio
+                  {{ t('skills.languages.english.level') }}
                 </span>
+
               </div>
 
               <div class="language__bar">
-                <span class="language__progress language__progress--b1"></span>
+                <span
+                  class="language__progress language__progress--b1"
+                ></span>
               </div>
 
               <p>
-                Nivel intermedio para lectura, comunicación y comprensión de
-                documentación técnica.
+                {{ t('skills.languages.english.description') }}
               </p>
             </div>
+
           </div>
         </article>
+
       </div>
     </div>
   </section>

@@ -3,6 +3,8 @@ import { ref } from 'vue'
 import { projects } from '~/data/projects'
 import type { Project } from '~/data/projects'
 
+const { t } = useI18n()
+
 const selectedProject = ref<Project | null>(null)
 
 const openProject = (project: Project) => {
@@ -17,17 +19,17 @@ const closeProject = () => {
 <template>
   <section id="proyectos" class="projects">
     <div class="projects__container">
+
       <!-- ENCABEZADO -->
       <div class="projects__heading">
         <h2 class="projects__title">
-          PROYECTOS
+          {{ t('projects.title') }}
         </h2>
 
         <div class="projects__line"></div>
 
         <p class="projects__intro">
-          Proyectos donde he aplicado desarrollo full stack, bases de datos,
-          integración de servicios y soluciones en la nube.
+          {{ t('projects.intro') }}
         </p>
       </div>
 
@@ -40,6 +42,7 @@ const closeProject = () => {
           @open="openProject"
         />
       </div>
+
     </div>
 
     <!-- MODAL -->

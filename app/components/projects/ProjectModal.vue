@@ -8,6 +8,8 @@ defineProps<{
 const emit = defineEmits<{
   close: []
 }>()
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -19,11 +21,12 @@ const emit = defineEmits<{
         @click.self="emit('close')"
       >
         <div class="project-modal__content">
+
           <!-- CERRAR -->
           <button
             class="project-modal__close"
             type="button"
-            aria-label="Cerrar"
+            :aria-label="t('projects.modal.close')"
             @click="emit('close')"
           >
             <UIcon name="i-lucide-x" />
@@ -33,11 +36,11 @@ const emit = defineEmits<{
           <div class="project-modal__header">
             <div>
               <span class="project-modal__eyebrow">
-                Proyecto
+                {{ t('projects.modal.project') }}
               </span>
 
               <h2>
-                {{ project.title }}
+                {{ t(project.titleKey) }}
               </h2>
             </div>
 
@@ -48,16 +51,16 @@ const emit = defineEmits<{
 
           <!-- DESCRIPCIÓN -->
           <div class="project-modal__section">
-            <h3>Descripción</h3>
+            <h3>{{ t('projects.modal.description') }}</h3>
 
             <p class="project-modal__description">
-              {{ project.description }}
+              {{ t(project.descriptionKey) }}
             </p>
           </div>
 
           <!-- ARQUITECTURA -->
           <div class="project-modal__section">
-            <h3>Arquitectura</h3>
+            <h3>{{ t('projects.modal.architecture') }}</h3>
 
             <div class="architecture">
               <div class="architecture__item">
@@ -65,8 +68,11 @@ const emit = defineEmits<{
                   <UIcon name="i-lucide-monitor" />
                 </div>
 
-                <span>Frontend</span>
-                <strong>{{ project.architecture.frontend }}</strong>
+                <span>{{ t('projects.modal.frontend') }}</span>
+
+                <strong>
+                  {{ project.architecture.frontend }}
+                </strong>
               </div>
 
               <UIcon
@@ -79,8 +85,11 @@ const emit = defineEmits<{
                   <UIcon name="i-lucide-server" />
                 </div>
 
-                <span>Backend</span>
-                <strong>{{ project.architecture.backend }}</strong>
+                <span>{{ t('projects.modal.backend') }}</span>
+
+                <strong>
+                  {{ project.architecture.backend }}
+                </strong>
               </div>
 
               <UIcon
@@ -93,15 +102,25 @@ const emit = defineEmits<{
                   <UIcon name="i-lucide-database" />
                 </div>
 
-                <span>Base de datos</span>
-                <strong>{{ project.architecture.database }}</strong>
+                <span>{{ t('projects.modal.database') }}</span>
+
+                <strong>
+                  {{ project.architecture.database }}
+                </strong>
               </div>
             </div>
 
-            <div class="architecture-cloud">
+            <!-- CLOUD -->
+            <div
+              v-if="project.architecture.cloud.length"
+              class="architecture-cloud"
+            >
               <div class="architecture-cloud__title">
                 <UIcon name="i-lucide-cloud" />
-                <span>Servicios Cloud</span>
+
+                <span>
+                  {{ t('projects.modal.cloudServices') }}
+                </span>
               </div>
 
               <div class="architecture-cloud__items">
@@ -117,18 +136,18 @@ const emit = defineEmits<{
 
           <!-- FUNCIONALIDADES -->
           <div class="project-modal__section">
-            <h3>Funcionalidades principales</h3>
+            <h3>{{ t('projects.modal.features') }}</h3>
 
             <div class="features">
               <div
-                v-for="feature in project.features"
-                :key="feature"
+                v-for="featureKey in project.featureKeys"
+                :key="featureKey"
                 class="feature"
               >
                 <UIcon name="i-lucide-check" />
 
                 <span>
-                  {{ feature }}
+                  {{ t(featureKey) }}
                 </span>
               </div>
             </div>
@@ -136,7 +155,7 @@ const emit = defineEmits<{
 
           <!-- TECNOLOGÍAS -->
           <div class="project-modal__section">
-            <h3>Tecnologías utilizadas</h3>
+            <h3>{{ t('projects.modal.technologies') }}</h3>
 
             <div class="technologies">
               <span
@@ -152,30 +171,35 @@ const emit = defineEmits<{
           <div
             v-if="project.repositories?.length || project.demo"
             class="project-modal__actions"
-            >
+          >
             <a
-                v-for="repository in project.repositories"
-                :key="repository.url"
-                :href="repository.url"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-modal__button project-modal__button--secondary"
+              v-for="repository in project.repositories"
+              :key="repository.url"
+              :href="repository.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-modal__button project-modal__button--secondary"
             >
-                <UIcon name="i-simple-icons-github" />
-                <span>{{ repository.name }}</span>
+              <UIcon name="i-simple-icons-github" />
+
+              <span>{{ repository.name }}</span>
             </a>
 
             <a
-                v-if="project.demo"
-                :href="project.demo"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-modal__button project-modal__button--primary"
+              v-if="project.demo"
+              :href="project.demo"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-modal__button project-modal__button--primary"
             >
-                <span>Ver proyecto</span>
-                <UIcon name="i-lucide-arrow-up-right" />
+              <span>
+                {{ t('projects.modal.viewProject') }}
+              </span>
+
+              <UIcon name="i-lucide-arrow-up-right" />
             </a>
-            </div>
+          </div>
+
         </div>
       </div>
     </Transition>

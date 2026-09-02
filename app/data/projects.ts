@@ -1,10 +1,10 @@
 export interface Project {
   id: number
-  title: string
-  shortDescription: string
-  description: string
+  titleKey: string
+  shortDescriptionKey: string
+  descriptionKey: string
   technologies: string[]
-  features: string[]
+  featureKeys: string[]
 
   architecture: {
     frontend: string
@@ -25,13 +25,13 @@ export const projects: Project[] = [
   {
     id: 1,
 
-    title: 'Gestor de Actividades',
+    titleKey: 'projects.items.activityManager.title',
 
-    shortDescription:
-      'Plataforma web para la gestión y participación en actividades. Los usuarios pueden explorar e inscribirse en actividades, los organizadores pueden crearlas y administrarlas, y los administradores cuentan con gestión completa de usuarios y actividades.',
+    shortDescriptionKey:
+      'projects.items.activityManager.shortDescription',
 
-    description:
-      'Gestor de Actividades es una aplicación full stack diseñada para centralizar la creación, administración y participación en actividades. Los usuarios pueden consultar las actividades disponibles y registrarse en aquellas de su interés. Los organizadores cuentan con herramientas para crear y gestionar sus actividades, mientras que el rol administrador posee control general sobre la plataforma, incluyendo la gestión de usuarios y actividades. La solución utiliza Nuxt y Vue en el frontend, una API REST desarrollada con Node.js y Express, y MongoDB Atlas como base de datos mediante Mongoose. Además, se incorporó una arquitectura basada en eventos con Amazon EventBridge y AWS Lambda para automatizar procesos y generar recordatorios relacionados con las actividades.',
+    descriptionKey:
+      'projects.items.activityManager.description',
 
     technologies: [
       'Nuxt',
@@ -46,21 +46,20 @@ export const projects: Project[] = [
       'Amazon EventBridge',
       'REST API',
       'Git'
-
     ],
 
-    features: [
-      'Exploración de actividades disponibles por parte de los usuarios',
-      'Inscripción de usuarios en actividades',
-      'Autenticación y autorización basada en roles',
-      'Gestión de actividades por parte de los organizadores',
-      'Creación y administración de actividades',
-      'Gestión completa de usuarios por parte del administrador',
-      'Gestión completa de actividades por parte del administrador',
-      'Persistencia de información mediante MongoDB Atlas',
-      'API REST para la comunicación entre frontend y backend',
-      'Automatización de recordatorios mediante AWS Lambda',
-      'Ejecución programada de procesos con Amazon EventBridge'
+    featureKeys: [
+      'projects.items.activityManager.features.explore',
+      'projects.items.activityManager.features.registration',
+      'projects.items.activityManager.features.auth',
+      'projects.items.activityManager.features.organizerManagement',
+      'projects.items.activityManager.features.activityCreation',
+      'projects.items.activityManager.features.userManagement',
+      'projects.items.activityManager.features.activityManagement',
+      'projects.items.activityManager.features.persistence',
+      'projects.items.activityManager.features.api',
+      'projects.items.activityManager.features.lambda',
+      'projects.items.activityManager.features.eventBridge'
     ],
 
     architecture: {
@@ -92,13 +91,13 @@ export const projects: Project[] = [
   {
     id: 2,
 
-    title: 'Aventones',
+    titleKey: 'projects.items.aventones.title',
 
-    shortDescription:
-      'Aplicación web inspirada en plataformas de transporte como Uber, donde los usuarios pueden buscar viajes disponibles, los conductores pueden publicar y administrar sus recorridos, y los administradores gestionan la operación general del sistema.',
+    shortDescriptionKey:
+      'projects.items.aventones.shortDescription',
 
-    description:
-      'Aventones es una aplicación web de gestión de viajes desarrollada con Laravel y PostgreSQL. La plataforma cuenta con tres roles principales. Los usuarios pueden buscar viajes disponibles desde un punto de origen hasta un destino, consultar información del conductor, del vehículo y las tarifas asociadas, y solicitar participar en un viaje. Los conductores pueden registrar sus datos personales y vehículos, crear viajes específicos y aceptar o rechazar las solicitudes enviadas por los pasajeros. El rol administrador permite gestionar la operación general de la plataforma, incluyendo usuarios, conductores, vehículos y viajes, manteniendo protegida la información sensible de los usuarios.',
+    descriptionKey:
+      'projects.items.aventones.description',
 
     technologies: [
       'Laravel',
@@ -107,18 +106,18 @@ export const projects: Project[] = [
       'Git'
     ],
 
-    features: [
-      'Autenticación y autorización basada en roles',
-      'Búsqueda de viajes por origen y destino',
-      'Visualización de información del conductor',
-      'Visualización de información del vehículo',
-      'Consulta de tarifas asociadas a cada viaje',
-      'Solicitud de participación en viajes por parte de los usuarios',
-      'Registro y gestión de vehículos por parte de los conductores',
-      'Creación y administración de viajes por parte de los conductores',
-      'Aceptación o rechazo de solicitudes de pasajeros',
-      'Gestión general de usuarios, conductores, vehículos y viajes por parte del administrador',
-      'Protección de información sensible de los usuarios'
+    featureKeys: [
+      'projects.items.aventones.features.auth',
+      'projects.items.aventones.features.search',
+      'projects.items.aventones.features.driverInfo',
+      'projects.items.aventones.features.vehicleInfo',
+      'projects.items.aventones.features.fares',
+      'projects.items.aventones.features.requestRide',
+      'projects.items.aventones.features.vehicleManagement',
+      'projects.items.aventones.features.tripManagement',
+      'projects.items.aventones.features.requestManagement',
+      'projects.items.aventones.features.adminManagement',
+      'projects.items.aventones.features.dataProtection'
     ],
 
     architecture: {

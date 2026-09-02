@@ -1,49 +1,54 @@
+<script setup lang="ts">
+const { t } = useI18n()
+</script>
+
 <template>
   <section id="sobre-mi" class="about">
     <div class="about__container">
+
       <!-- COLUMNA IZQUIERDA -->
       <div class="about__content">
         <div class="about__heading">
           <h2 class="about__title">
-            SOBRE <span>MÍ</span>
+            {{ t('about.title') }}
+            <span>{{ t('about.titleHighlight') }}</span>
           </h2>
 
           <div class="about__line"></div>
         </div>
 
         <p class="about__intro">
-          Me interesa entender una aplicación de
-          <strong>principio a fin</strong>, no solamente una parte de ella.
+          {{ t('about.intro.before') }}
+          <strong>{{ t('about.intro.highlight') }}</strong>
+          {{ t('about.intro.after') }}
         </p>
 
         <div class="about__text">
           <p>
-            Soy estudiante de <strong>Ingeniería de Software</strong> y
-            desarrollador enfocado en construir soluciones web completas.
-            Me interesa comprender todo el proceso detrás de una aplicación,
-            desde la interfaz y la experiencia del usuario hasta el backend,
-            las bases de datos y su despliegue.
+            {{ t('about.paragraph1.before') }}
+            <strong>{{ t('about.paragraph1.highlight') }}</strong>
+            {{ t('about.paragraph1.after') }}
           </p>
 
           <p>
-            Disfruto crear <strong>productos digitales</strong> que sean
-            funcionales, organizados y pensados para resolver necesidades
-            reales. También me motiva aprender nuevas tecnologías,
-            enfrentar desafíos y mejorar continuamente mis habilidades.
+            {{ t('about.paragraph2.before') }}
+            <strong>{{ t('about.paragraph2.highlight') }}</strong>
+            {{ t('about.paragraph2.after') }}
           </p>
 
           <p>
-            Mi objetivo es desarrollarme como
-            <strong>Full Stack Developer</strong>, mientras continúo
-            profundizando en áreas que me interesan especialmente, como
-            <strong>Cloud Computing</strong>, desarrollo backend y arquitectura
-            de aplicaciones.
+            {{ t('about.paragraph3.before') }}
+            <strong>{{ t('about.paragraph3.fullStack') }}</strong>
+            {{ t('about.paragraph3.middle') }}
+            <strong>{{ t('about.paragraph3.cloud') }}</strong>
+            {{ t('about.paragraph3.after') }}
           </p>
         </div>
       </div>
 
       <!-- COLUMNA DERECHA -->
       <div class="about__cards">
+
         <!-- FORMACIÓN -->
         <article class="about-card">
           <div class="about-card__icon">
@@ -51,18 +56,17 @@
           </div>
 
           <span class="about-card__label">
-            Formación
+            {{ t('about.cards.education.label') }}
           </span>
 
           <h3>
-            Diplomado Universitario
+            {{ t('about.cards.education.title') }}
           </h3>
 
           <div class="about-card__line"></div>
 
           <p>
-            Diplomado en Tecnologías Informáticas, donde fortalecí mis bases
-            en desarrollo de software, bases de datos y tecnologías aplicadas.
+            {{ t('about.cards.education.description') }}
           </p>
         </article>
 
@@ -73,18 +77,17 @@
           </div>
 
           <span class="about-card__label">
-            Actualmente
+            {{ t('about.cards.current.label') }}
           </span>
 
           <h3>
-            Ingeniería de Software
+            {{ t('about.cards.current.title') }}
           </h3>
 
           <div class="about-card__line"></div>
 
           <p>
-            Continúo mis estudios universitarios para obtener el Bachillerato
-            en Ingeniería de Software y seguir ampliando mis conocimientos.
+            {{ t('about.cards.current.description') }}
           </p>
         </article>
 
@@ -95,18 +98,17 @@
           </div>
 
           <span class="about-card__label">
-            Enfoque
+            {{ t('about.cards.focus.label') }}
           </span>
 
           <h3>
-            Full Stack Development
+            {{ t('about.cards.focus.title') }}
           </h3>
 
           <div class="about-card__line"></div>
 
           <p>
-            Me enfoco en construir soluciones completas, abarcando frontend,
-            backend, bases de datos e integración entre diferentes servicios.
+            {{ t('about.cards.focus.description') }}
           </p>
         </article>
 
@@ -117,26 +119,25 @@
           </div>
 
           <span class="about-card__label">
-            Interés principal
+            {{ t('about.cards.interest.label') }}
           </span>
 
           <h3>
-            Cloud Computing
+            {{ t('about.cards.interest.title') }}
           </h3>
 
           <div class="about-card__line"></div>
 
           <p>
-            Me interesa la infraestructura en la nube, el despliegue de
-            aplicaciones, los servicios cloud y la arquitectura de soluciones
-            modernas.
+            {{ t('about.cards.interest.description') }}
           </p>
         </article>
+
       </div>
+
     </div>
   </section>
 </template>
-
 <style scoped>
 .about {
   min-height: 100vh;

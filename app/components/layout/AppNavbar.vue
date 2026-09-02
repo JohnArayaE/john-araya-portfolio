@@ -3,8 +3,8 @@ const { t, locale } = useI18n()
 
 const cvPath = computed(() => {
   return locale.value === 'es'
-    ? '/cv/John-Araya-CV-ES.pdf'
-    : '/cv/John-Araya-CV-EN.pdf'
+    ? '/cv/CV_JohnArayaEcheverria Español.pdf'
+    : '/cv/CV_JohnArayaEcheverria.pdf'
 })
 </script>
 

@@ -6,35 +6,240 @@
     "contact": "Contacto",
     "downloadCv": "Descargar CV"
   },
+
   "hero": {
-  "eyebrow": "Hola, soy",
-  "role": "Desarrollador de Software",
-  "description": "Desarrollo aplicaciones web y soluciones backend enfocadas en funcionalidad, rendimiento y experiencias digitales claras.",
-  "viewProjects": "Ver proyectos",
-  "contactMe": "Contáctame",
+    "eyebrow": "Hola, soy",
+    "role": "Desarrollador de Software",
+    "description": "Desarrollo aplicaciones web y soluciones backend enfocadas en funcionalidad, rendimiento y experiencias digitales claras.",
+    "viewProjects": "Ver proyectos",
+    "contactMe": "Contáctame",
 
-  "focus": {
-    "title": "Áreas de enfoque",
+    "focus": {
+      "title": "Áreas de enfoque",
 
-    "web": {
-      "title": "Desarrollo Web",
-      "description": "Interfaces modernas, responsivas y centradas en una experiencia de usuario clara e intuitiva."
-    },
+      "web": {
+        "title": "Desarrollo Web",
+        "description": "Interfaces modernas, responsivas y centradas en una experiencia de usuario clara e intuitiva."
+      },
 
-    "backend": {
-      "title": "Backend",
-      "description": "APIs robustas, arquitectura organizada y soluciones escalables orientadas al rendimiento."
-    },
+      "backend": {
+        "title": "Backend",
+        "description": "APIs robustas, arquitectura organizada y soluciones escalables orientadas al rendimiento."
+      },
 
-    "database": {
-      "title": "Bases de Datos",
-      "description": "Modelado, consultas y almacenamiento de datos para aplicaciones modernas y confiables."
-    },
+      "database": {
+        "title": "Bases de Datos",
+        "description": "Modelado, consultas y almacenamiento de datos para aplicaciones modernas y confiables."
+      },
 
-    "cloud": {
-      "title": "Cloud",
-      "description": "Despliegue, servicios en la nube y herramientas para construir y mantener aplicaciones modernas."
+      "cloud": {
+        "title": "Cloud",
+        "description": "Despliegue, servicios en la nube y herramientas para construir y mantener aplicaciones modernas."
+      }
     }
+  },
+
+  "about": {
+    "title": "SOBRE",
+    "titleHighlight": "MÍ",
+
+    "intro": {
+      "before": "Me interesa entender una aplicación de",
+      "highlight": "principio a fin",
+      "after": ", no solamente una parte de ella."
+    },
+
+    "paragraph1": {
+      "before": "Soy estudiante de",
+      "highlight": "Ingeniería de Software",
+      "after": "y desarrollador enfocado en construir aplicaciones web y soluciones de software completas. Me interesa comprender todo el proceso detrás de una aplicación, desde la interfaz y la experiencia del usuario hasta el backend, las bases de datos y su despliegue."
+    },
+
+    "paragraph2": {
+      "before": "Disfruto crear",
+      "highlight": "productos digitales",
+      "after": "que sean funcionales, organizados y pensados para resolver necesidades reales. También me motiva aprender nuevas tecnologías, enfrentar desafíos y mejorar continuamente mis habilidades."
+    },
+
+    "paragraph3": {
+      "before": "Mi objetivo es seguir creciendo y mejorando como",
+      "fullStack": "Full Stack Developer",
+      "middle": ", mientras continúo profundizando en áreas que me interesan especialmente, como",
+      "cloud": "Cloud Computing",
+      "after": ", desarrollo backend y arquitectura de aplicaciones."
+    },
+
+    "cards": {
+      "education": {
+        "label": "Formación",
+        "title": "Diplomado Universitario",
+        "description": "Diplomado en Tecnologías Informáticas, donde fortalecí mis bases en desarrollo de software, bases de datos y tecnologías aplicadas."
+      },
+
+      "current": {
+        "label": "Actualmente",
+        "title": "Ingeniería de Software",
+        "description": "Continúo mis estudios universitarios para obtener el Bachillerato en Ingeniería de Software y seguir ampliando mis conocimientos."
+      },
+
+      "focus": {
+        "label": "Enfoque",
+        "title": "Full Stack Development",
+        "description": "Me enfoco en construir soluciones completas, abarcando frontend, backend, bases de datos e integración entre diferentes servicios."
+      },
+
+      "interest": {
+        "label": "Interés principal",
+        "title": "Cloud Computing",
+        "description": "Me interesa la infraestructura en la nube, el despliegue de aplicaciones, los servicios cloud y la arquitectura de soluciones modernas."
+      }
+    }
+  },
+
+  "skills": {
+    "title": "HABILIDADES",
+    "intro": "Capacidades profesionales y técnicas que aplico durante el desarrollo de proyectos y el trabajo en equipo.",
+
+    "soft": {
+      "title": "Habilidades blandas",
+
+      "teamwork": {
+        "title": "Trabajo en equipo",
+        "description": "Colaboración efectiva para alcanzar objetivos comunes."
+      },
+
+      "leadership": {
+        "title": "Liderazgo",
+        "description": "Capacidad para coordinar, orientar y apoyar al equipo."
+      },
+
+      "adaptability": {
+        "title": "Adaptabilidad",
+        "description": "Facilidad para afrontar nuevos retos y formas de trabajo."
+      },
+
+      "discipline": {
+        "title": "Disciplina",
+        "description": "Constancia, organización y compromiso con los objetivos."
+      },
+
+      "interpersonal": {
+        "title": "Excelentes relaciones interpersonales",
+        "description": "Comunicación y colaboración efectiva dentro de diferentes equipos de trabajo."
+      }
+    },
+
+    "technical": {
+      "title": "Habilidades técnicas",
+      "fullStack": "Desarrollo Full Stack",
+      "restApis": "Desarrollo de APIs REST",
+      "databaseDesign": "Diseño y gestión de bases de datos",
+      "sql": "SQL y consultas de datos",
+      "integration": "Integración de servicios",
+      "versionControl": "Control de versiones",
+      "containerization": "Containerización",
+      "cloud": "Cloud Computing",
+      "responsive": "Diseño responsivo"
+    },
+
+    "languages": {
+      "title": "Idiomas",
+      "label": "Idioma",
+
+      "spanish": {
+        "name": "Español",
+        "level": "Nativo",
+        "description": "Dominio nativo para comunicación profesional y cotidiana."
+      },
+
+      "english": {
+        "name": "Inglés",
+        "level": "B1 · Intermedio",
+        "description": "Nivel intermedio para lectura, comunicación y comprensión de documentación técnica."
+      }
+    }
+  },
+
+  "projects": {
+    "title": "PROYECTOS",
+    "intro": "Proyectos donde he aplicado desarrollo full stack, bases de datos, integración de servicios y soluciones en la nube.",
+
+    "card": {
+      "featured": "Proyecto destacado",
+      "viewMore": "Ver más"
+    },
+
+    "modal": {
+      "close": "Cerrar",
+      "project": "Proyecto",
+      "description": "Descripción",
+      "architecture": "Arquitectura",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Base de datos",
+      "cloudServices": "Servicios Cloud",
+      "features": "Funcionalidades principales",
+      "technologies": "Tecnologías utilizadas",
+      "viewProject": "Ver proyecto"
+    },
+
+    "items": {
+      "activityManager": {
+        "title": "Gestor de Actividades",
+        "shortDescription": "Plataforma web para la gestión y participación en actividades. Los usuarios pueden explorar e inscribirse en actividades, los organizadores pueden crearlas y administrarlas, y los administradores cuentan con gestión completa de usuarios y actividades.",
+        "description": "Gestor de Actividades es una aplicación full stack diseñada para centralizar la creación, administración y participación en actividades. Los usuarios pueden consultar las actividades disponibles y registrarse en aquellas de su interés. Los organizadores cuentan con herramientas para crear y gestionar sus actividades, mientras que el rol administrador posee control general sobre la plataforma, incluyendo la gestión de usuarios y actividades. La solución utiliza Nuxt y Vue en el frontend, una API REST desarrollada con Node.js y Express, y MongoDB Atlas como base de datos mediante Mongoose. Además, se incorporó una arquitectura basada en eventos con Amazon EventBridge y AWS Lambda para automatizar procesos y generar recordatorios relacionados con las actividades.",
+
+        "features": {
+          "explore": "Exploración de actividades disponibles por parte de los usuarios",
+          "registration": "Inscripción de usuarios en actividades",
+          "auth": "Autenticación y autorización basada en roles",
+          "organizerManagement": "Gestión de actividades por parte de los organizadores",
+          "activityCreation": "Creación y administración de actividades",
+          "userManagement": "Gestión completa de usuarios por parte del administrador",
+          "activityManagement": "Gestión completa de actividades por parte del administrador",
+          "persistence": "Persistencia de información mediante MongoDB Atlas",
+          "api": "API REST para la comunicación entre frontend y backend",
+          "lambda": "Automatización de recordatorios mediante AWS Lambda",
+          "eventBridge": "Ejecución programada de procesos con Amazon EventBridge"
+        }
+      },
+
+      "aventones": {
+        "title": "Aventones",
+        "shortDescription": "Aplicación web inspirada en plataformas de transporte como Uber, donde los usuarios pueden buscar viajes disponibles, los conductores pueden publicar y administrar sus recorridos, y los administradores gestionan la operación general del sistema.",
+        "description": "Aventones es una aplicación web de gestión de viajes desarrollada con Laravel y PostgreSQL. La plataforma cuenta con tres roles principales. Los usuarios pueden buscar viajes disponibles desde un punto de origen hasta un destino, consultar información del conductor, del vehículo y las tarifas asociadas, y solicitar participar en un viaje. Los conductores pueden registrar sus datos personales y vehículos, crear viajes específicos y aceptar o rechazar las solicitudes enviadas por los pasajeros. El rol administrador permite gestionar la operación general de la plataforma, incluyendo usuarios, conductores, vehículos y viajes, manteniendo protegida la información sensible de los usuarios.",
+
+        "features": {
+          "auth": "Autenticación y autorización basada en roles",
+          "search": "Búsqueda de viajes por origen y destino",
+          "driverInfo": "Visualización de información del conductor",
+          "vehicleInfo": "Visualización de información del vehículo",
+          "fares": "Consulta de tarifas asociadas a cada viaje",
+          "requestRide": "Solicitud de participación en viajes por parte de los usuarios",
+          "vehicleManagement": "Registro y gestión de vehículos por parte de los conductores",
+          "tripManagement": "Creación y administración de viajes por parte de los conductores",
+          "requestManagement": "Aceptación o rechazo de solicitudes de pasajeros",
+          "adminManagement": "Gestión general de usuarios, conductores, vehículos y viajes por parte del administrador",
+          "dataProtection": "Protección de información sensible de los usuarios"
+        }
+      }
+    }
+  },
+
+  "contact": {
+    "title": "CONTAC",
+    "titleHighlight": "TO",
+    "eyebrow": "Disponible para conectar",
+    "heading": "¿Hablamos?",
+    "description": "Si tienes una oportunidad, proyecto o simplemente quieres conversar sobre desarrollo de software, puedes contactarme directamente por cualquiera de estos medios.",
+    "sendEmail": "Enviarme un correo"
+  },
+
+  "footer": {
+    "description": "Desarrollador de software enfocado en crear aplicaciones web y soluciones de software completas, funcionales y bien estructuradas.",
+    "navigation": "Navegación",
+    "connect": "Conecta conmigo",
+    "rights": "Todos los derechos reservados.",
+    "backToTop": "Volver arriba"
   }
-}
 }

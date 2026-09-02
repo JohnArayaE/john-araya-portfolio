@@ -8,6 +8,8 @@ defineProps<{
 const emit = defineEmits<{
   open: [project: Project]
 }>()
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -18,17 +20,17 @@ const emit = defineEmits<{
       </div>
 
       <span class="project-card__label">
-        Proyecto destacado
+        {{ t('projects.card.featured') }}
       </span>
     </div>
 
     <div class="project-card__content">
       <h3 class="project-card__title">
-        {{ project.title }}
+        {{ t(project.titleKey) }}
       </h3>
 
       <p class="project-card__description">
-        {{ project.shortDescription }}
+        {{ t(project.shortDescriptionKey) }}
       </p>
 
       <div class="project-card__architecture">
@@ -54,7 +56,7 @@ const emit = defineEmits<{
 
         <div class="architecture-item">
           <UIcon name="i-lucide-database" />
-          <span>MongoDB Atlas</span>
+          <span>{{ project.architecture.database }}</span>
         </div>
       </div>
 
@@ -74,14 +76,13 @@ const emit = defineEmits<{
         type="button"
         @click="emit('open', project)"
       >
-        <span>Ver más</span>
+        <span>{{ t('projects.card.viewMore') }}</span>
 
         <UIcon name="i-lucide-arrow-up-right" />
       </button>
     </div>
   </article>
 </template>
-
 <style scoped>
 .project-card {
   position: relative;

@@ -1,3 +1,9 @@
+<script setup lang="ts">
+const { t } = useI18n()
+
+const currentYear = new Date().getFullYear()
+</script>
+
 <template>
   <footer class="footer">
     <div class="footer__container">
@@ -9,24 +15,38 @@
           </a>
 
           <p>
-            Desarrollador de software enfocado en crear soluciones web
-            completas, funcionales y bien estructuradas.
+            {{ t('footer.description') }}
           </p>
         </div>
 
         <div class="footer__navigation">
-          <span class="footer__label">Navegación</span>
+          <span class="footer__label">
+            {{ t('footer.navigation') }}
+          </span>
 
           <nav class="footer__links">
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#sobre-mi">
+              {{ t('navbar.about') }}
+            </a>
+
+            <a href="#habilidades">
+              {{ t('navbar.skills') }}
+            </a>
+
+            <a href="#proyectos">
+              {{ t('navbar.projects') }}
+            </a>
+
+            <a href="#contacto">
+              {{ t('navbar.contact') }}
+            </a>
           </nav>
         </div>
 
         <div class="footer__social">
-          <span class="footer__label">Conecta conmigo</span>
+          <span class="footer__label">
+            {{ t('footer.connect') }}
+          </span>
 
           <div class="footer__social-links">
             <a
@@ -62,21 +82,17 @@
 
       <div class="footer__bottom">
         <p>
-          © {{ currentYear }} John Araya. Todos los derechos reservados.
+          © {{ currentYear }} John Araya. {{ t('footer.rights') }}
         </p>
 
         <a href="#inicio" class="footer__back">
-          <span>Volver arriba</span>
+          <span>{{ t('footer.backToTop') }}</span>
           <UIcon name="i-lucide-arrow-up" />
         </a>
       </div>
     </div>
   </footer>
 </template>
-
-<script setup lang="ts">
-const currentYear = new Date().getFullYear()
-</script>
 
 <style scoped>
 .footer {

@@ -6,35 +6,240 @@
     "contact": "Contact",
     "downloadCv": "Download CV"
   },
+
   "hero": {
-  "eyebrow": "Hi, I'm",
-  "role": "Software Developer",
-  "description": "I develop web applications and backend solutions focused on functionality, performance, and clear digital experiences.",
-  "viewProjects": "View projects",
-  "contactMe": "Contact me",
+    "eyebrow": "Hi, I'm",
+    "role": "Software Developer",
+    "description": "I develop web applications and backend solutions focused on functionality, performance, and clear digital experiences.",
+    "viewProjects": "View projects",
+    "contactMe": "Contact me",
 
-  "focus": {
-    "title": "Areas of Focus",
+    "focus": {
+      "title": "Areas of Focus",
 
-    "web": {
-      "title": "Web Development",
-      "description": "Modern, responsive interfaces focused on a clear and intuitive user experience."
-    },
+      "web": {
+        "title": "Web Development",
+        "description": "Modern, responsive interfaces focused on a clear and intuitive user experience."
+      },
 
-    "backend": {
-      "title": "Backend",
-      "description": "Robust APIs, organized architecture, and scalable solutions focused on performance."
-    },
+      "backend": {
+        "title": "Backend",
+        "description": "Robust APIs, organized architecture, and scalable solutions focused on performance."
+      },
 
-    "database": {
-      "title": "Databases",
-      "description": "Data modeling, querying, and storage for modern and reliable applications."
-    },
+      "database": {
+        "title": "Databases",
+        "description": "Data modeling, querying, and storage for modern and reliable applications."
+      },
 
-    "cloud": {
-      "title": "Cloud",
-      "description": "Deployment, cloud services, and tools for building and maintaining modern applications."
+      "cloud": {
+        "title": "Cloud",
+        "description": "Deployment, cloud services, and tools for building and maintaining modern applications."
+      }
     }
+  },
+
+  "about": {
+    "title": "ABOUT",
+    "titleHighlight": "ME",
+
+    "intro": {
+      "before": "I'm interested in understanding an application",
+      "highlight": "from start to finish",
+      "after": ", not just one part of it."
+    },
+
+    "paragraph1": {
+      "before": "I am a",
+      "highlight": "Software Engineering",
+      "after": "student and developer focused on building web applications and complete software solutions. I am interested in understanding the entire process behind an application, from the interface and user experience to the backend, databases, and deployment."
+    },
+
+    "paragraph2": {
+      "before": "I enjoy creating",
+      "highlight": "digital products",
+      "after": "that are functional, organized, and designed to solve real needs. I am also motivated by learning new technologies, facing challenges, and continuously improving my skills."
+    },
+
+    "paragraph3": {
+      "before": "My goal is to continue growing and improving as a",
+      "fullStack": "Full Stack Developer",
+      "middle": ", while continuing to deepen my knowledge in areas that especially interest me, such as",
+      "cloud": "Cloud Computing",
+      "after": ", backend development, and application architecture."
+    },
+
+    "cards": {
+      "education": {
+        "label": "Education",
+        "title": "University Diploma",
+        "description": "University Diploma in Information Technologies, where I strengthened my foundations in software development, databases, and applied technologies."
+      },
+
+      "current": {
+        "label": "Currently",
+        "title": "Software Engineering",
+        "description": "I am continuing my university studies to earn a Bachelor's degree in Software Engineering and further expand my knowledge."
+      },
+
+      "focus": {
+        "label": "Focus",
+        "title": "Full Stack Development",
+        "description": "I focus on building complete solutions covering frontend, backend, databases, and integration between different services."
+      },
+
+      "interest": {
+        "label": "Main interest",
+        "title": "Cloud Computing",
+        "description": "I am interested in cloud infrastructure, application deployment, cloud services, and the architecture of modern solutions."
+      }
+    }
+  },
+
+  "skills": {
+    "title": "SKILLS",
+    "intro": "Professional and technical skills that I apply during project development and teamwork.",
+
+    "soft": {
+      "title": "Soft Skills",
+
+      "teamwork": {
+        "title": "Teamwork",
+        "description": "Effective collaboration to achieve common goals."
+      },
+
+      "leadership": {
+        "title": "Leadership",
+        "description": "Ability to coordinate, guide, and support a team."
+      },
+
+      "adaptability": {
+        "title": "Adaptability",
+        "description": "Ability to adapt to new challenges and different ways of working."
+      },
+
+      "discipline": {
+        "title": "Discipline",
+        "description": "Consistency, organization, and commitment to achieving goals."
+      },
+
+      "interpersonal": {
+        "title": "Excellent interpersonal skills",
+        "description": "Effective communication and collaboration across different work teams."
+      }
+    },
+
+    "technical": {
+      "title": "Technical Skills",
+      "fullStack": "Full Stack Development",
+      "restApis": "REST API Development",
+      "databaseDesign": "Database Design and Management",
+      "sql": "SQL and Data Queries",
+      "integration": "Service Integration",
+      "versionControl": "Version Control",
+      "containerization": "Containerization",
+      "cloud": "Cloud Computing",
+      "responsive": "Responsive Design"
+    },
+
+    "languages": {
+      "title": "Languages",
+      "label": "Language",
+
+      "spanish": {
+        "name": "Spanish",
+        "level": "Native",
+        "description": "Native proficiency for professional and everyday communication."
+      },
+
+      "english": {
+        "name": "English",
+        "level": "B1 · Intermediate",
+        "description": "Intermediate level for reading, communication, and understanding technical documentation."
+      }
+    }
+  },
+
+  "projects": {
+    "title": "PROJECTS",
+    "intro": "Projects where I have applied full stack development, databases, service integration, and cloud solutions.",
+
+    "card": {
+      "featured": "Featured project",
+      "viewMore": "View more"
+    },
+
+    "modal": {
+      "close": "Close",
+      "project": "Project",
+      "description": "Description",
+      "architecture": "Architecture",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "cloudServices": "Cloud Services",
+      "features": "Main Features",
+      "technologies": "Technologies Used",
+      "viewProject": "View project"
+    },
+
+    "items": {
+      "activityManager": {
+        "title": "Activity Manager",
+        "shortDescription": "Web platform for managing and participating in activities. Users can explore and register for activities, organizers can create and manage them, and administrators have full management capabilities over users and activities.",
+        "description": "Activity Manager is a full stack application designed to centralize the creation, management, and participation in activities. Users can browse available activities and register for those they are interested in. Organizers have tools to create and manage their activities, while the administrator role has general control over the platform, including user and activity management. The solution uses Nuxt and Vue on the frontend, a REST API developed with Node.js and Express, and MongoDB Atlas as the database through Mongoose. In addition, an event-driven architecture using Amazon EventBridge and AWS Lambda was incorporated to automate processes and generate activity-related reminders.",
+
+        "features": {
+          "explore": "Exploration of available activities by users",
+          "registration": "User registration for activities",
+          "auth": "Role-based authentication and authorization",
+          "organizerManagement": "Activity management by organizers",
+          "activityCreation": "Creation and administration of activities",
+          "userManagement": "Complete user management by the administrator",
+          "activityManagement": "Complete activity management by the administrator",
+          "persistence": "Data persistence using MongoDB Atlas",
+          "api": "REST API for communication between frontend and backend",
+          "lambda": "Reminder automation using AWS Lambda",
+          "eventBridge": "Scheduled process execution using Amazon EventBridge"
+        }
+      },
+
+      "aventones": {
+        "title": "Aventones",
+        "shortDescription": "Web application inspired by transportation platforms such as Uber, where users can search for available rides, drivers can publish and manage their trips, and administrators manage the overall operation of the system.",
+        "description": "Aventones is a ride management web application developed with Laravel and PostgreSQL. The platform has three main roles. Users can search for available rides from an origin to a destination, view driver and vehicle information along with associated fares, and request to participate in a ride. Drivers can register their personal information and vehicles, create specific trips, and accept or reject passenger requests. The administrator role allows management of the platform's overall operation, including users, drivers, vehicles, and trips, while keeping users' sensitive information protected.",
+
+        "features": {
+          "auth": "Role-based authentication and authorization",
+          "search": "Ride search by origin and destination",
+          "driverInfo": "Driver information display",
+          "vehicleInfo": "Vehicle information display",
+          "fares": "Display of fares associated with each ride",
+          "requestRide": "Ride participation requests by users",
+          "vehicleManagement": "Vehicle registration and management by drivers",
+          "tripManagement": "Trip creation and administration by drivers",
+          "requestManagement": "Acceptance or rejection of passenger requests",
+          "adminManagement": "General management of users, drivers, vehicles, and trips by the administrator",
+          "dataProtection": "Protection of users' sensitive information"
+        }
+      }
+    }
+  },
+
+  "contact": {
+    "title": "CONT",
+    "titleHighlight": "ACT",
+    "eyebrow": "Available to connect",
+    "heading": "Let's talk?",
+    "description": "If you have an opportunity, a project, or simply want to talk about software development, you can contact me directly through any of these channels.",
+    "sendEmail": "Send me an email"
+  },
+
+  "footer": {
+    "description": "Software developer focused on building complete, functional, and well-structured web applications and software solutions.",
+    "navigation": "Navigation",
+    "connect": "Connect with me",
+    "rights": "All rights reserved.",
+    "backToTop": "Back to top"
   }
-}
 }
