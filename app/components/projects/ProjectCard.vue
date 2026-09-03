@@ -341,10 +341,14 @@ const { t } = useI18n()
    RESPONSIVE
 ================================ */
 
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
   .project-card {
     min-height: auto;
+  }
+}
 
+@media (max-width: 600px) {
+  .project-card {
     padding: 23px;
   }
 

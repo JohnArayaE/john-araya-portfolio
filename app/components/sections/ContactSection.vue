@@ -338,8 +338,10 @@ const { t } = useI18n()
 
 /* RESPONSIVE */
 
-@media (max-width: 950px) {
+@media (max-width: 1100px) {
   .contact {
+    min-height: auto;
+    align-items: flex-start;
     padding: 90px 30px;
   }
 
@@ -355,7 +357,6 @@ const { t } = useI18n()
 
 @media (max-width: 600px) {
   .contact {
-    min-height: auto;
     padding: 80px 20px;
   }
 

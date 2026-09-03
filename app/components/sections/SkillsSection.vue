@@ -37,13 +37,11 @@ const { t } = useI18n()
           </div>
 
           <div class="skills-card__content skills-card__content--soft">
-
             <div class="skill-item">
               <UIcon name="i-lucide-users-round" />
 
               <div>
                 <h4>{{ t('skills.soft.teamwork.title') }}</h4>
-
                 <p>
                   {{ t('skills.soft.teamwork.description') }}
                 </p>
@@ -55,7 +53,6 @@ const { t } = useI18n()
 
               <div>
                 <h4>{{ t('skills.soft.leadership.title') }}</h4>
-
                 <p>
                   {{ t('skills.soft.leadership.description') }}
                 </p>
@@ -67,7 +64,6 @@ const { t } = useI18n()
 
               <div>
                 <h4>{{ t('skills.soft.adaptability.title') }}</h4>
-
                 <p>
                   {{ t('skills.soft.adaptability.description') }}
                 </p>
@@ -79,7 +75,6 @@ const { t } = useI18n()
 
               <div>
                 <h4>{{ t('skills.soft.discipline.title') }}</h4>
-
                 <p>
                   {{ t('skills.soft.discipline.description') }}
                 </p>
@@ -91,13 +86,11 @@ const { t } = useI18n()
 
               <div>
                 <h4>{{ t('skills.soft.interpersonal.title') }}</h4>
-
                 <p>
                   {{ t('skills.soft.interpersonal.description') }}
                 </p>
               </div>
             </div>
-
           </div>
         </article>
 
@@ -116,7 +109,6 @@ const { t } = useI18n()
           </div>
 
           <div class="technical-list">
-
             <div class="technical-item">
               <UIcon name="i-lucide-layers-3" />
               <span>{{ t('skills.technical.fullStack') }}</span>
@@ -161,7 +153,6 @@ const { t } = useI18n()
               <UIcon name="i-lucide-monitor-smartphone" />
               <span>{{ t('skills.technical.responsive') }}</span>
             </div>
-
           </div>
         </article>
 
@@ -184,7 +175,6 @@ const { t } = useI18n()
             <!-- ESPAÑOL -->
             <div class="language">
               <div class="language__top">
-
                 <div>
                   <span class="language__label">
                     {{ t('skills.languages.label') }}
@@ -198,7 +188,6 @@ const { t } = useI18n()
                 <span class="language__level">
                   {{ t('skills.languages.spanish.level') }}
                 </span>
-
               </div>
 
               <div class="language__bar">
@@ -215,7 +204,6 @@ const { t } = useI18n()
             <!-- INGLÉS -->
             <div class="language">
               <div class="language__top">
-
                 <div>
                   <span class="language__label">
                     {{ t('skills.languages.label') }}
@@ -229,7 +217,6 @@ const { t } = useI18n()
                 <span class="language__level">
                   {{ t('skills.languages.english.level') }}
                 </span>
-
               </div>
 
               <div class="language__bar">
@@ -242,7 +229,6 @@ const { t } = useI18n()
                 {{ t('skills.languages.english.description') }}
               </p>
             </div>
-
           </div>
         </article>
 
@@ -254,6 +240,7 @@ const { t } = useI18n()
 <style scoped>
 .skills {
   min-height: 100vh;
+
   display: flex;
   align-items: center;
 
@@ -270,6 +257,7 @@ const { t } = useI18n()
 
 .skills__container {
   width: min(100% - 40px, 1400px);
+
   margin: 0 auto;
 }
 
@@ -279,6 +267,7 @@ const { t } = useI18n()
 
 .skills__heading {
   max-width: 750px;
+
   margin-bottom: 52px;
 }
 
@@ -289,6 +278,7 @@ const { t } = useI18n()
   line-height: 1;
 
   font-weight: 800;
+
   letter-spacing: -0.045em;
 
   color: var(--color-white);
@@ -373,6 +363,7 @@ const { t } = useI18n()
 .skills-card__header {
   display: flex;
   align-items: center;
+
   gap: 16px;
 
   padding-bottom: 24px;
@@ -433,6 +424,7 @@ const { t } = useI18n()
 
 .skills-card__content--soft {
   display: grid;
+
   grid-template-columns: repeat(2, minmax(0, 1fr));
 
   gap: 14px;
@@ -443,6 +435,7 @@ const { t } = useI18n()
 
   display: flex;
   align-items: flex-start;
+
   gap: 12px;
 
   border: 1px solid rgba(255, 255, 255, 0.06);
@@ -505,6 +498,7 @@ const { t } = useI18n()
 
 .technical-list {
   display: grid;
+
   grid-template-columns: repeat(2, minmax(0, 1fr));
 
   gap: 12px;
@@ -683,30 +677,51 @@ const { t } = useI18n()
 }
 
 /* =====================================================
-   RESPONSIVE
+   TABLET
 ===================================================== */
 
-@media (max-width: 1150px) {
+@media (max-width: 1100px) {
   .skills {
     min-height: auto;
+
+    align-items: flex-start;
+    padding: 70px 0 55px;
+  }
+
+  .skills__heading {
+    margin-bottom: 44px;
   }
 
   .skills__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .skills-card {
+    min-height: auto;
+  }
+
   .skills-card--languages {
     grid-column: 1 / -1;
+
     min-height: auto;
   }
 
   .languages {
     display: grid;
+
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
+/* =====================================================
+   TABLET PEQUEÑA
+===================================================== */
+
 @media (max-width: 800px) {
+  .skills {
+    padding: 65px 0 50px;
+  }
+
   .skills__grid {
     grid-template-columns: 1fr;
   }
@@ -714,13 +729,18 @@ const { t } = useI18n()
   .skills-card,
   .skills-card--languages {
     grid-column: auto;
+
     min-height: auto;
   }
 }
 
+/* =====================================================
+   MÓVIL
+===================================================== */
+
 @media (max-width: 600px) {
   .skills {
-    padding: 80px 0;
+    padding: 70px 0 45px;
   }
 
   .skills__container {

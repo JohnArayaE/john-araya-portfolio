@@ -73,6 +73,7 @@ const closeProject = () => {
 
 .projects__container {
   width: min(100% - 40px, 1400px);
+
   margin: 0 auto;
 }
 
@@ -93,6 +94,7 @@ const closeProject = () => {
   line-height: 1;
 
   font-weight: 800;
+
   letter-spacing: -0.045em;
 
   color: var(--color-white);
@@ -128,18 +130,35 @@ const closeProject = () => {
 
 .projects__grid {
   display: grid;
+
   grid-template-columns: repeat(2, minmax(0, 1fr));
 
   gap: 22px;
 }
 
 /* ================================
-   RESPONSIVE
+   TABLET
 ================================ */
 
-@media (max-width: 900px) {
+/*
+  Importante:
+  1024px entra aquí.
+
+  En tablets dejamos de obligar a Projects
+  a ocupar 100vh y dejamos de centrar
+  verticalmente todo el contenido.
+*/
+@media (max-width: 1100px) {
   .projects {
     min-height: auto;
+
+    align-items: flex-start;
+
+    padding: 80px 0;
+  }
+
+  .projects__heading {
+    margin-bottom: 44px;
   }
 
   .projects__grid {
@@ -147,9 +166,13 @@ const closeProject = () => {
   }
 }
 
+/* ================================
+   MOBILE
+================================ */
+
 @media (max-width: 600px) {
   .projects {
-    padding: 80px 0;
+    padding: 70px 0;
   }
 
   .projects__container {
@@ -162,6 +185,13 @@ const closeProject = () => {
 
   .projects__title {
     font-size: clamp(2.8rem, 14vw, 4rem);
+  }
+
+  .projects__intro {
+    margin-top: 20px;
+
+    font-size: 0.98rem;
+    line-height: 1.7;
   }
 }
 </style>
