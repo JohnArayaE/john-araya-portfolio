@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@iconify-json/devicon": "^1.2.62",
     "@nuxt/icon": "^2.5.1",
     "@nuxt/ui": "^4.10.0",
     "@nuxtjs/color-mode": "^4.0.1",

@@ -88,56 +88,56 @@ const { t } = useI18n()
               <div class="focus-item__badges">
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--vue"
-                    name="i-simple-icons-vuedotjs"
+                    class="tech-logo"
+                    name="i-devicon-vuejs"
                   />
                   Vue
                 </span>
 
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--nuxt"
-                    name="i-simple-icons-nuxtdotjs"
+                    class="tech-logo"
+                    name="i-devicon-nuxtjs"
                   />
                   Nuxt
                 </span>
 
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--typescript"
-                    name="i-simple-icons-typescript"
+                    class="tech-logo"
+                    name="i-devicon-typescript"
                   />
                   TypeScript
                 </span>
 
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--javascript"
-                    name="i-simple-icons-javascript"
+                    class="tech-logo"
+                    name="i-devicon-javascript"
                   />
                   JavaScript
                 </span>
 
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--html"
-                    name="i-simple-icons-html5"
+                    class="tech-logo"
+                    name="i-devicon-html5"
                   />
                   HTML5
                 </span>
 
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--css"
-                    name="i-simple-icons-css3"
+                    class="tech-logo"
+                    name="i-devicon-css3"
                   />
                   CSS3
                 </span>
 
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--tailwind"
-                    name="i-simple-icons-tailwindcss"
+                    class="tech-logo"
+                    name="i-devicon-tailwindcss"
                   />
                   Tailwind CSS
                 </span>
@@ -169,32 +169,32 @@ const { t } = useI18n()
               <div class="focus-item__badges">
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--fastapi"
-                    name="i-simple-icons-fastapi"
+                    class="tech-logo"
+                    name="i-devicon-fastapi"
                   />
                   FastAPI
                 </span>
 
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--laravel"
-                    name="i-simple-icons-laravel"
+                    class="tech-logo"
+                    name="i-devicon-laravel"
                   />
                   Laravel
                 </span>
 
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--node"
-                    name="i-simple-icons-nodedotjs"
+                    class="tech-logo"
+                    name="i-devicon-nodejs"
                   />
                   Node.js
                 </span>
 
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--express"
-                    name="i-simple-icons-express"
+                    class="tech-logo"
+                    name="i-devicon-express"
                   />
                   Express.js
                 </span>
@@ -209,18 +209,34 @@ const { t } = useI18n()
 
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--python"
-                    name="i-simple-icons-python"
+                    class="tech-logo"
+                    name="i-devicon-python"
                   />
                   Python
                 </span>
 
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--php"
-                    name="i-simple-icons-php"
+                    class="tech-logo"
+                    name="i-devicon-php"
                   />
                   PHP
+                </span>
+
+                <span>
+                  <UIcon
+                    class="tech-logo"
+                    name="i-devicon-java"
+                  />
+                  Java
+                </span>
+
+                <span>
+                  <UIcon
+                    class="tech-logo"
+                    name="i-devicon-csharp"
+                  />
+                  C#
                 </span>
               </div>
             </div>
@@ -242,32 +258,40 @@ const { t } = useI18n()
               <div class="focus-item__badges">
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--postgresql"
-                    name="i-simple-icons-postgresql"
+                    class="tech-logo"
+                    name="i-devicon-postgresql"
                   />
                   PostgreSQL
                 </span>
 
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--sqlserver"
-                    name="i-simple-icons-microsoftsqlserver"
+                    class="tech-logo"
+                    name="i-devicon-microsoftsqlserver"
                   />
                   SQL Server
                 </span>
 
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--mongodb"
-                    name="i-simple-icons-mongodb"
+                    class="tech-logo"
+                    name="i-devicon-mysql"
+                  />
+                  MySQL
+                </span>
+
+                <span>
+                  <UIcon
+                    class="tech-logo"
+                    name="i-devicon-mongodb"
                   />
                   MongoDB
                 </span>
 
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--firebase"
-                    name="i-simple-icons-firebase"
+                    class="tech-logo"
+                    name="i-devicon-firebase"
                   />
                   Firebase
                 </span>
@@ -299,40 +323,40 @@ const { t } = useI18n()
               <div class="focus-item__badges">
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--aws"
-                    name="i-simple-icons-amazonwebservices"
+                    class="tech-logo"
+                    name="i-devicon-amazonwebservices"
                   />
                   AWS
                 </span>
 
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--azure"
-                    name="i-simple-icons-microsoftazure"
+                    class="tech-logo"
+                    name="i-devicon-azure"
                   />
                   Azure
                 </span>
 
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--docker"
-                    name="i-simple-icons-docker"
+                    class="tech-logo"
+                    name="i-devicon-docker"
                   />
                   Docker
                 </span>
 
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--git"
-                    name="i-simple-icons-git"
+                    class="tech-logo"
+                    name="i-devicon-git"
                   />
                   Git
                 </span>
 
                 <span>
                   <UIcon
-                    class="tech-logo tech-logo--github"
-                    name="i-simple-icons-github"
+                    class="tech-logo"
+                    name="i-devicon-github"
                   />
                   GitHub
                 </span>
@@ -350,8 +374,10 @@ const { t } = useI18n()
 <style scoped>
 .hero {
   min-height: calc(100vh - 72px);
+
   display: flex;
   align-items: center;
+
   padding: 70px 0;
 
   background:
@@ -365,11 +391,17 @@ const { t } = useI18n()
 
 .hero__container {
   width: min(100% - 40px, 1400px);
+
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(460px, 0.9fr);
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(460px, 0.9fr);
+
   align-items: center;
+
   gap: 70px;
 }
 
@@ -395,6 +427,7 @@ const { t } = useI18n()
   line-height: 0.95;
 
   font-weight: 800;
+
   letter-spacing: -0.05em;
 
   color: var(--color-white);
@@ -425,6 +458,7 @@ const { t } = useI18n()
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
+
   gap: 14px;
 
   margin-top: 36px;
@@ -436,6 +470,7 @@ const { t } = useI18n()
   justify-content: center;
 
   min-height: 48px;
+
   padding: 0 22px;
 
   border-radius: 8px;
@@ -456,6 +491,7 @@ const { t } = useI18n()
 
 .hero__button--primary {
   background-color: var(--color-primary);
+
   border: 1px solid var(--color-primary);
 
   color: var(--color-white);
@@ -463,11 +499,13 @@ const { t } = useI18n()
 
 .hero__button--primary:hover {
   background-color: var(--color-primary-hover);
+
   border-color: var(--color-primary-hover);
 }
 
 .hero__button--secondary {
   background-color: transparent;
+
   border: 1px solid var(--color-border);
 
   color: var(--color-text);
@@ -475,12 +513,14 @@ const { t } = useI18n()
 
 .hero__button--secondary:hover {
   border-color: var(--color-white);
+
   color: var(--color-white);
 }
 
 .hero__socials {
   display: flex;
   align-items: center;
+
   gap: 12px;
 
   margin-top: 28px;
@@ -508,7 +548,9 @@ const { t } = useI18n()
   background-color: var(--color-primary);
 }
 
-/* PANEL DERECHO */
+/* =========================
+   PANEL DERECHO
+========================= */
 
 .focus-card {
   padding: 26px;
@@ -535,6 +577,7 @@ const { t } = useI18n()
 .focus-card__title {
   display: flex;
   align-items: center;
+
   gap: 10px;
 
   color: var(--color-primary);
@@ -554,12 +597,15 @@ const { t } = useI18n()
 .focus-card__list {
   display: flex;
   flex-direction: column;
+
   gap: 14px;
 }
 
 .focus-item {
   display: grid;
+
   grid-template-columns: 64px 1fr;
+
   gap: 18px;
 
   padding: 18px;
@@ -641,25 +687,25 @@ const { t } = useI18n()
   color: var(--color-text-soft);
 }
 
-/* BADGES */
+/* =========================
+   BADGES
+========================= */
 
 .focus-item__badges {
   display: flex;
   flex-wrap: wrap;
+
   gap: 8px;
 }
 
-/*
- * El > es MUY importante.
- * Solo aplica estilos al badge principal,
- * no al span interno que utiliza Nuxt Icon.
- */
 .focus-item__badges > span {
   display: inline-flex;
   align-items: center;
+
   gap: 7px;
 
   min-height: 30px;
+
   padding: 5px 10px;
 
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -689,134 +735,40 @@ const { t } = useI18n()
   transform: translateY(-1px);
 }
 
-/* LOGOS */
+/* =========================
+   LOGOS
+========================= */
 
 .tech-logo {
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
 
   display: inline-block;
 
-  flex: 0 0 15px;
-
-  background-color: currentColor;
+  flex: 0 0 17px;
 }
 
-/* COLORES DE TECNOLOGÍAS */
-
-/* WEB */
-
-.tech-logo--vue {
-  color: #42b883;
-}
-
-.tech-logo--nuxt {
-  color: #00dc82;
-}
-
-.tech-logo--typescript {
-  color: #3178c6;
-}
-
-.tech-logo--javascript {
-  color: #f7df1e;
-}
-
-.tech-logo--html {
-  color: #e34f26;
-}
-
-.tech-logo--css {
-  color: #1572b6;
-}
-
-.tech-logo--tailwind {
-  color: #06b6d4;
-}
 
 .tech-logo--pinia {
   color: #ffd859;
-}
-
-/* BACKEND */
-
-.tech-logo--fastapi {
-  color: #009688;
-}
-
-.tech-logo--laravel {
-  color: #ff2d20;
-}
-
-.tech-logo--node {
-  color: #5fa04e;
-}
-
-.tech-logo--express {
-  color: #ffffff;
 }
 
 .tech-logo--django {
   color: #44b78b;
 }
 
-.tech-logo--python {
-  color: #3776ab;
+.tech-logo--qdrant {
+  color: #dc244c;
 }
-
-.tech-logo--php {
-  color: #777bb4;
-}
-
-/* BASES DE DATOS */
-
-.tech-logo--postgresql {
-  color: #4169e1;
-}
-
-.tech-logo--sqlserver {
-  color: #cc2927;
-}
-
-.tech-logo--mongodb {
-  color: #47a248;
-}
-
-.tech-logo--firebase {
-  color: #ffca28;
-}
-
 .tech-logo--qdrant {
   color: #dc244c;
 }
 
-/* CLOUD */
-
-.tech-logo--aws {
-  color: #ff9900;
-}
-
-.tech-logo--azure {
-  color: #0078d4;
-}
-
-.tech-logo--docker {
-  color: #2496ed;
-}
-
-.tech-logo--git {
-  color: #f05032;
-}
-
-.tech-logo--github {
-  color: #ffffff;
-}
-
-/* RESPONSIVE */
 
 @media (max-width: 1100px) {
   .hero__container {
     grid-template-columns: 1fr;
+
     gap: 56px;
   }
 
@@ -844,6 +796,7 @@ const { t } = useI18n()
 
   .hero__description {
     font-size: 1rem;
+
     line-height: 1.7;
   }
 
